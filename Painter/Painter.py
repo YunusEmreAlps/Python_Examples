@@ -2,6 +2,7 @@
 
 import turtle # Graphical package
 import time
+from turtle import Turtle,Screen
 
 
 turtle.hideturtle()
@@ -23,10 +24,16 @@ pen.shape(p_img)
 pen.color("black")
 pen.pensize(3)
 
+# dragging
+def dragging(x,y):
+    pen.ondrag(None)
+    pen.setheading(pen.towards(x,y))
+    pen.goto(x,y)
+    pen.ondrag(dragging)
+
 def Rem():
     window.onclick(pen.goto)
-
-
+    
 # Pen Move
 def U(): # Up
     y = pen.ycor()
@@ -113,11 +120,12 @@ def key():
 # penup and pendown
     window.onkeypress(pup,"p")
     window.onkeypress(pdown,"o")
-    window.listen()
+    window.listen()  
     
 while True:
     window.update()
     key()
+    pen.ondrag(dragging)
     Rem()
     time.sleep(0.01)
 
