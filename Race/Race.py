@@ -9,7 +9,7 @@ turtle.hideturtle()
 window = turtle.Screen()
 window.title("Turtle Race")
 window.bgcolor("white") # bg : background
-window.setup(width=800,height=800)
+window.setup(width=850,height=800)
 
 r_img = "C:/Users/Dell/Desktop/Basic_PythonExamples/Race/r_car.gif"
 b_img = "C:/Users/Dell/Desktop/Basic_PythonExamples/Race/b_car.gif"

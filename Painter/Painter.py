@@ -4,7 +4,6 @@ import turtle # Graphical package
 import time
 from turtle import Turtle,Screen
 
-
 turtle.hideturtle()
 
 # Screen
