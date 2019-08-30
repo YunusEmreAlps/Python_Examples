@@ -1,0 +1,66 @@
+ Abandon  terk_etmek býrakmak 
+ Ability  hüner beceri kabiliyet
+ About  hakkýnda takriben aþaðý_yukarý üzere
+ Above  üstünde üzerine
+ Abroad  yurtdýþýnda yurtdýþý
+ Absence  bulunmama yokluk
+ Absolute  mutlak salt kesin
+ Absolutely  mutlaka, kesinlikle
+ Abuse  suistimal etmek, kötüye kullanmak
+ Access  giriþ eriþim eriþmek
+ Accident  kaza
+ Accompany  eþlik_etmek
+ Accomplish  baþarýyla_tamamlamak sonuçlandýrmak
+ Accurate  kesin doðru
+ Accuse  suçlamak itham_etmek
+ Achieve  elde_etmek baþarmak
+ Achievement  baþarý edinim
+ Acknowledge  kabul_etmek kabullenmek
+ Acquire  edinmek elde_etmek
+ Across  karþýya boydan_boya_geçmek
+ Act  davranmak hareket_etmek eylem
+ Action  aksiyon eylem
+ Active  etkin faal
+ Activity  faaliyet etkinlik aktivite
+ Actual  gerçek fiili
+ Actually  fiilen aslýnda
+ Adapt  uymak uyarlamak adapte_olmak
+ Add  eklemek ilave_etmek
+ Additional  ilave ek
+ Adequate  yeterli münasip
+ Adjust  ayarlamak
+ Adjustment  ayarlama ayar
+ Administration  idare yönetim
+ Administrator  idareci yönetici
+ Admire  hayran_olmak beðenmek
+ Admission  kabul itiraf
+ Admit  kabul_etmek itiraf_etmek
+ Adolescent  ergen
+ Adopt  evlat_edinmek benimsemek
+ Adult  yetiþkin
+ Advance  ilerlemek avans geliþtirmek
+ Advanced  ileri geliþkin
+ Advantage  avantaj fayda
+ Adventure  macera serüven
+ Advertising  reklamcýlýk reklam
+ Advice  tavsiye nasihat
+ Advise  nasihat_etmek öðütlemek
+ Adviser  müþavir danýþman
+ Advocate  avukat müdafaa_etmek
+ Affect  etkilemek
+ Afford  parasý_yetmek
+ Afraid  korkmuþ ürkmüþ
+ After  sonra
+ Afternoon  öðleden_sonra
+ Again  tekrar yeniden
+ Against  karþý aykýrý
+ Agency  ajans acente
+ Agenda  gündem ajanda
+ Agent  ajan temsilci
+ Aggressive  kavgacý agresif
+ Ago  evvel önce
+ Addition  ilave ek
+ Pen  kalem 
+ Paper  kaðýt
+ Mouse  fare 
+ Glass    bardak,cam 
