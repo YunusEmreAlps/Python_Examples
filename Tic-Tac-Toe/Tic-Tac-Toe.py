@@ -270,9 +270,11 @@ def Menu():
     print("\n1.) New Game ")
     print("2.) Quit")
     
-    ex = int(input("Please enter process number : "))
-    return ex
-
+    while True:
+        ex = int(input("Please enter process number : "))
+        if (ex == 1) or (ex == 2):
+            return ex
+            break
 
 # Main Function
 counter = 0
