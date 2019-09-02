@@ -66,6 +66,8 @@ def Sign_in(): # Sign in (Oturum aç)
     if nm in person.keys():
         if person[nm] == ps:
             tkinter.messagebox.showinfo("Log in message","Access is success")
+        else:
+            tkinter.messagebox.showerror("Log in message","Access denied")
     else:
         tkinter.messagebox.showerror("Log in message","Access denied")
     
