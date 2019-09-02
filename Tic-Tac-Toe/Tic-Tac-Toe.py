@@ -29,8 +29,12 @@ new_game()
 def player_1():
     while True:        
         print("\nplayer 1 : (X)")
-        ply_1 = int(input("Choose a position from (1-9) : ")) # player 1
-       
+        while True:
+            ply_1 = int(input("Choose a position from (1-9) : ")) # player 1
+            if ply_1>0 and ply_1<10:
+                break
+            
+        
         if data[(ply_1)-1] == '_': # !! Control !!
             
             data[(ply_1)-1] = 'X' # Value is changed
@@ -132,7 +136,8 @@ def check():    # Row conrol
                    else:
                        res = 0
                        break
-    # Reverse Contol              
+    # Reverse Contol 
+    res = 0             
     for i in range(9): 
         if ((i==2)or(i==5)or(i==8)):
             if(data[i] == 'X'):
@@ -181,6 +186,7 @@ def check_2(): # Column control
                        res = 0
                        break
     # Reverse
+    res = 0
     for i in range(9): 
         if ((i==6)or(i==7)or(i==8)):
             if(data[i] == 'X'): # X control X X X
