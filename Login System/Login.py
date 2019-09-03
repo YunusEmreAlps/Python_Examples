@@ -13,10 +13,9 @@ import tkinter.messagebox
 
 def Sign_up(): # Sign up (Kaydol)
     
-    while True:
-        nm = theEntry1.get() # Name
-        nm = nm.title() # first letter is capital
-        ps = theEntry2.get() # Password
+    nm = theEntry1.get() # Name
+    #nm = nm.title() # first letter is capital
+    ps = theEntry2.get() # Password
         
     A = ''
     if nm.count(' ') > 0: # This code diversify -> Hello_world 
@@ -49,7 +48,7 @@ def Sign_up(): # Sign up (Kaydol)
 def Sign_in(): # Sign in (Oturum aç)
     
     nm = theEntry1.get() # Name
-    nm = nm.title() # first letter is capital
+    #nm = nm.title() # first letter is capital
     ps = theEntry2.get() # Password
     
     A = ''
