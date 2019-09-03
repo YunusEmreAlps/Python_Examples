@@ -280,8 +280,8 @@ def Menu():
 counter = 0
 while True:
     
-    counter += 1
     player_1()
+    counter += 1
     winner = check()
     if Res(winner) == 'A':
         ng = Menu() # Menu Part
@@ -328,6 +328,7 @@ while True:
     
     
     player_2()
+    counter += 1
     winner = check()
     if Res(winner) == 'B':
         ng = Menu()
@@ -361,7 +362,6 @@ while True:
         elif ng == 2:
             break
     
-    counter += 1
     if counter == 9:
         print("Draw")
         ng = Menu()
