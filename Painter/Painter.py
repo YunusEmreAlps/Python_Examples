@@ -11,6 +11,7 @@ window = turtle.Screen()
 window.title("Painter")
 window.bgcolor("white")
 window.setup(width=600,height=600)
+window.tracer(0)
 
 p_img = "C:/Users/Dell/Desktop/Basic_PythonExamples/Painter/pen.gif"
 
@@ -127,6 +128,5 @@ while True:
     pen.ondrag(dragging)
     Rem()
     time.sleep(0.01)
-
 
 window.mainloop()
