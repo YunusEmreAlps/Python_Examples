@@ -1,10 +1,12 @@
 # Tic-Tac-Toe
 
-import random    
+import random # Computer move  
+
+data = [] # <class 'list'> // Game Area
+cnt = 0 # move counter 
+ex = 0  # game over menu
 
 # Draw a Game Area 
-data = [] # <class 'list'>
-
 def new_game(): # Print empty area  
     A =''
     for i in range(3): # Row
@@ -20,7 +22,7 @@ def new_game(): # Print empty area
             else: # |
                 A += '|'
     print(A)
-new_game()
+new_game() # Drawing ...
 # _|_|_\n
 # _|_|_\n
 # _|_|_\n
@@ -42,6 +44,7 @@ def player_1():
             
             A = '' 
             counter = 0
+            global cnt
             
             # Update
             for i in range(3): # Row
@@ -62,6 +65,7 @@ def player_1():
                     else: # '|'
                         A += '|'
             print(A) # Show  
+            cnt += 1 # move counter
             break
          
         else:
@@ -86,6 +90,7 @@ def player_2():
             
             A = ''
             counter = 0
+            global cnt
             
             for i in range(3): # Row
                 for j in range(6): # Column
@@ -104,7 +109,8 @@ def player_2():
                     
                     else: # '|'
                         A += '|'
-            print(A)
+            print(A) # Show
+            cnt += 1 # move counter
             break
         else:
             print("You can't go there")
@@ -234,7 +240,7 @@ def diagon(): # Diagonal control
                         else:
                             res = 0
                             break
-                    
+             
             if(data[i] == 'O'): # O control O O O
                 # \ 
                 if i == 0:
@@ -269,107 +275,76 @@ def Res(winner): # Show Winner
 def Menu():
     print("\n1.) New Game ")
     print("2.) Quit")
+    global ex 
+    global data
+    global cnt
+    #global ch1
     
     while True:
         ex = int(input("Please enter process number : "))
         if (ex == 1) or (ex == 2):
-            return ex
             break
+    if ex == 1:
+        data = []
+        cnt = 0
+      # ch1 = 0
+        new_game()
+        game()
+    return ex   
 
 # Main Function
-counter = 0
-while True:
+      
+def game():
+    while True:
+        player_1()
+        winner = check()
+        if Res(winner) == 'A':
+            ng = Menu() # Menu Part
+            if ng == 2:
+                break
     
-    player_1()
-    counter += 1
-    winner = check()
-    if Res(winner) == 'A':
-        ng = Menu() # Menu Part
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
-    
-    winner_2 = check_2()
-    if Res(winner_2) == 'A':
-        ng = Menu() # Menu Part
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
+        winner_2 = check_2()
+        if Res(winner_2) == 'A':
+            ng = Menu() # Menu Part
+            if ng == 2:
+                break
         
-    winner_3 = diagon()
-    if Res(winner_3) == 'A':
-        ng = Menu() # Menu Part
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
+        winner_3 = diagon()
+        if Res(winner_3) == 'A':
+            ng = Menu() # Menu Part
+            if ng == 2:
+                break
     
-    if counter == 9:
-        print("Draw")
-        ng = Menu()
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
+        if cnt == 9:
+            print("Draw")
+            ng = Menu() # Menu Part
+            if ng == 2:
+                break
     
     
-    player_2()
-    counter += 1
-    winner = check()
-    if Res(winner) == 'B':
-        ng = Menu()
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
+        player_2()
+        winner = check()
+        if Res(winner) == 'B':
+            ng = Menu() # Menu Part
+            if ng == 2:
+                break
         
-    winner_2 = check_2()
-    if Res(winner_2) == 'B':
-        ng = Menu()
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
+        winner_2 = check_2()
+        if Res(winner_2) == 'B':
+                ng = Menu() # Menu Part
+                if ng == 2:
+                    break
     
-    winner_3 = diagon()
-    if Res(winner_3) == 'B':
-        ng = Menu()
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
+        winner_3 = diagon()
+        if Res(winner_3) == 'B':
+            ng = Menu() # Menu Part
+            if ng == 2:
+                break
     
-    if counter == 9:
-        print("Draw")
-        ng = Menu()
-        if ng == 1:
-            data = []
-            counter = 0
-            ch1 = 0
-            new_game()
-        elif ng == 2:
-            break
+        if cnt == 9:
+            print("Draw")
+            ng = Menu() # Menu Part
+            if ng == 2:
+                break
     
+game()
