@@ -11,8 +11,8 @@ window.title("Turtle Race")
 window.bgcolor("white") # bg : background
 window.setup(width=850,height=800)
 
-r_img = "C:/Users/Dell/Desktop/Basic_PythonExamples/Race/r_car.gif"
-b_img = "C:/Users/Dell/Desktop/Basic_PythonExamples/Race/b_car.gif"
+r_img = "C:/Users/Dell/Desktop/GitHub/Python/Basic_PythonExamples/Race/r_car.gif"
+b_img = "C:/Users/Dell/Desktop/GitHub/Python/Basic_PythonExamples/Race/b_car.gif"
 
 window.addshape(r_img)
 window.addshape(b_img)

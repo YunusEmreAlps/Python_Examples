@@ -78,7 +78,7 @@ def Sign_in(): # Sign in (Oturum aç)
 root = tkinter.Tk() # Basic window
 
 root.configure(background="white")
-root.iconbitmap("C:/Users/Dell/Desktop/Basic_PythonExamples/Login System/person.ico")
+root.iconbitmap("C:/Users/Dell/Desktop/GitHub/Python/Basic_PythonExamples/Login System/person.ico")
 root.title("Login System")
 root.minsize(width=500,height=300)
 root.resizable(width=False,height=False)

@@ -4,6 +4,7 @@ import turtle # Graphical package
 import random # Random package 
 
 turtle.hideturtle() # invisible
+turtle.color("white")
 
 # Screen
 window = turtle.Screen()
